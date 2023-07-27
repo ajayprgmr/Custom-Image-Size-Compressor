@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costom image Size compressor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" >
+</head>
+<body>
+  <div class="main-container">
+    <header>
+        <!-- Header content goes here -->
+        <img src="./ImgCompresso.jpg" class="logo">
+    </header>
+
+    <main>
+        <!-- Main content goes here -->
+        <p>This is an <span>image compressor website</span>, here you can compress your
+           images accoding to your desired size range. it can <span>compress the
+            image size upto 90% </span> the orignal size.
+        </p>
+        <div class="hline"></div>
+       <div class="HowToUse">
+         <h3>How to use it?</h3>
+         <a href="https://www.example.com">
+            <img src="./yt-icon.png" alt="YouTube-icon" >
+          </a>
+       </div>
+        <ul class="custom-list">
+                <li>Upload the image using <span>upload button </span>or <span>drag and drop</span> area.</li>
+                <li>Scroll the <span>image-size-bar</span> to the left or right and choose your desired size range, while scrolling the 
+                    size of the compressed image would be shown on just right of upload section with file size. </li>
+                <li>Now, when you found your size range click on the <span>Download </span>button  to download the compressed image.</li>
+        </ul>
+        </main>
+       <!-- Now image upload-section and download section ui -->
+        <div class="upload-download">
+            <div class="drop-zone">
+            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <input type="file" name="myFile" class="drop-zone__input" id="fileInput">
+          </div>
+          <div class="image-info">
+            <p><span id="width"></span> <span id="height"></span> <span id="size"></span></p>
+          </div>
+          
+          <div class="download">
+  
+          </div>
+        </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.main-container header {
+    padding:40px 10px 0px 10px;
+    text-align: left;
+}
+.main-container header .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-container main {
+    padding:30px 20px 20px 20px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+span {
+   font-weight: bold;
+   text-decoration: none;
+}
+.hline  {
+    border-top:dashed 2px rgb(148, 142, 142);
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.HowToUse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+}
+.HowToUse h3 {
+    padding-right:8px;
+    font-style: italic;
+    font-size: 1.2rem;
+
+ }
+  
+.HowToUse img {
+    margin-top: 10px;
+   width: 25px;
+   height: 25px;
+  }
+/* Style for the custom list */
+ul.custom-list {
+    list-style: none;
+    counter-reset: step-counter;
+    font-size: medium;
+  }
+  
+  /* Style for each list item */
+  ul.custom-list li {
+    position: relative;
+    padding-left:55px; /* Adjust the spacing between the bullet and text */
+    margin-bottom: 5px;
+    line-height: 1.1;
+  }
+  /* Style for the Step- prefix */
+  ul.custom-list li:before {
+    content: "Step-" counter(step-counter) ":"; /* Add the "Step-" prefix and the counter value */
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+.upload-download {
+   position: relative;
+   width: 100%;
+   border:2px dashed darkgrey;
+   aspect-ratio: 1/.4;
+   display: flex;
+   justify-content: space-between;
+  }
+
+.drop-zone {
+    width: 40%;
+    margin:10px 0 40px 10px;
+    aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	cursor: pointer;
+	color: #cccccc;
+	border: 2px dashed #0fdabc;
+	border-radius: 10px;
+
+}
+.drop-zone--over {
+	border-style: solid;
+}
+
+.drop-zone__input {
+	display: none;
+}
+
+.drop-zone__thumb {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #cccccc;
+	background-size: cover;
+	position: relative;
+}
+
+.drop-zone__thumb::after {
+	content: attr(data-label);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 1.5vh;
+	text-align: center;
+}
+.image-info {
+    margin:10px;
+    width: 40%;
+    height: 3%;
+    position: absolute;
+    font-size: 1vw;
+    text-align: center;
+    bottom:15px;
+}
+.download  {
+    width: 40%;
+    margin:10px 10px 40px 10px;
+    aspect-ratio: 1/1;
+    padding:25px;
+    border:1px dashed grey;
+    border-radius: 5px;
+}
