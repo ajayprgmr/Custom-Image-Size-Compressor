@@ -89,9 +89,9 @@ ul.custom-list {
   }
 
 .drop-zone {
-    width: 40%;
-    margin:10px 0 40px 10px;
-    aspect-ratio: 1/1;
+  width: 40%;
+  margin:10px 0 40px 10px;
+  aspect-ratio: 1/1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -144,6 +144,7 @@ ul.custom-list {
     text-align: center;
     bottom:15px;
 }
+
 .download  {
     width: 40%;
     margin:10px 10px 40px 10px;
